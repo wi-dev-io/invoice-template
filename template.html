@@ -1,0 +1,35 @@
+<html>
+    <title>
+        AP Invoice Template
+    </title>
+    <!-- this auto imports the bootstrap css, just type in the class names on elements -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <!-- this imports our script file -->
+    <script src="script.js"></script>
+
+    <!-- this import moment.js, which is used to parse dates, when you moment in the script.js file, it is referencing this -->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    
+    <body onload="onload()">
+        <!-- give the page a nice header -->  
+        <div class="col-8 mr-auto ml-auto row" id=apInvTitle1><img src ="X:\inserver6\worksheet\301YT9M_00005C33P000004\NHRMCLogo.png"/></div>
+        
+        <div class="col-8 mr-auto ml-auto row" id=apInvTitle2></div><br>
+
+        <!-- give the page our ap invoice header information -->
+        <!-- it is okay to hard code the html for the header information -->
+        <div class="col-8 mr-auto ml-auto row" id="apInvHeader">
+            <div class="col-7" id="invInfo">
+                <div class="col-12" id="invInfoDetail"></div>
+            </div>
+            <div class="col-5" id="addrInfo"></div>
+        </div> <br>
+
+        <!-- give our page the invoice line details -->
+        <div class="col-8 mr-auto ml-auto table table-striped" id="apInvLines"></div><br>
+
+        <!-- give our page the footer information, stamps, etc. -->
+        <div class="col-6 ml-auto mr-auto" id="apInvFooter"></div>
+    </body>
+</html>
